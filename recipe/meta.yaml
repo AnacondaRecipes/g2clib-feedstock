@@ -11,15 +11,16 @@ source:
 build:
   number: 4
   skip: True  # [win]
+  run_exports:
+    # no abi lab result, but conda-forge pins to minor version
+    - {{ pin_subpackage('g2clib', max_pin='x.x') }}
 
 requirements:
   build:
-    - libpng >=1.6.22,<1.6.31
-    - zlib 1.2.11
-    - jasper
-  run:
-    - libpng >=1.6.22,<1.6.31
-    - zlib 1.2.11
+    - {{ compiler('c') }}
+  host:
+    - libpng
+    - zlib
     - jasper
 
 test:
