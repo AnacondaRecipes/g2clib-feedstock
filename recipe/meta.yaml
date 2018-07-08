@@ -7,9 +7,11 @@ package:
 source:
   url: http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/g2clib-{{ version }}.tar
   sha256: afec1ea29979b84369d0f46f305ed12f73f1450ec2db737664ec7f75c1163add
+  patches:
+    - 0001-Fix-jpeg2000-compile-error.patch
 
 build:
-  number: 4
+  number: 5
   skip: True  # [win]
   run_exports:
     # no abi lab result, but conda-forge pins to minor version
