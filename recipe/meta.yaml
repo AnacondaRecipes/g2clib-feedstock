@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.6.2" %}
 
 package:
   name: g2clib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/g2clib-{{ version }}.tar
-  sha256: afec1ea29979b84369d0f46f305ed12f73f1450ec2db737664ec7f75c1163add
+  sha256: 1f599b8fc6d466bc942bcb7fcc68d5fb8d105a34642be9a02d5b4361c168f1e5
   patches:
     - 0001-Fix-jpeg2000-compile-error.patch
 
