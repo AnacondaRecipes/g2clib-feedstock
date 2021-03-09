@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 
 package:
   name: g2clib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/g2clib-{{ version }}.tar
-  sha256: 1f599b8fc6d466bc942bcb7fcc68d5fb8d105a34642be9a02d5b4361c168f1e5
+  sha256: 83e4f2061b3d4a8bd431ba860dda8c5cf103b25f42d265b7b724b9acafad177c
 
 build:
   number: 0
